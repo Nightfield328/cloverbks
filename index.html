@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clover Barrel &amp; Books — Coming Soon</title>
+
+  <!-- Elegant, restrained fonts (loads if you’re online) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #e4e1d9;          /* warm stone */
+      --ink: #24352e;         /* deep evergreen */
+      --ink-soft: #4a5b53;    /* muted supporting text */
+      --sage: #9fb2a1;        /* refined sage */
+      --line: #c7c1b5;        /* soft brass-stone */
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    .page{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+
+    main{
+      flex:1;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: clamp(32px, 5vw, 72px) 20px;
+      text-align:center;
+    }
+
+    .panel{
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .kicker{
+      text-transform:uppercase;
+      letter-spacing:.28em;
+      font-size: 13px;
+      color: var(--ink-soft);
+      margin: 0 0 18px;
+    }
+
+    h1{
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(40px, 5.5vw, 58px);
+      font-weight: 600;
+      margin: 0 0 26px;
+      letter-spacing: .02em;
+    }
+
+    .logo{
+      width: clamp(130px, 18vw, 165px);
+      height: auto;
+      display:block;
+      margin: 0 auto 22px;
+      filter: drop-shadow(0 1px 0 #00000012);
+    }
+
+    .bridge{
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-size: 14px;
+      color: var(--ink-soft);
+      margin: 0 0 20px;
+    }
+
+    .rule{
+      width: 340px;
+      max-width: 72%;
+      height: 1px;
+      background: var(--line);
+      margin: 20px auto 22px;
+    }
+
+    .headline{
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(28px, 4vw, 40px);
+      letter-spacing: .10em;
+      text-transform: uppercase;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    .headline span{
+      display:block;
+      margin-top: 6px;
+    }
+
+    footer{
+      background: var(--sage);
+      color: var(--ink);
+      font-size: 13px;
+      padding: 16px 20px;
+      text-align:center;
+      letter-spacing: .03em;
+    }
+
+    @media (max-width: 420px){
+      .bridge{ font-size: 13px; }
+      .kicker{ font-size: 12px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <main>
+      <section class="panel" aria-label="Coming soon">
+        <p class="kicker">Coming Soon</p>
+        <h1>Clover Barrel &amp; Books</h1>
+
+        <!-- Your final logo (keep logo.png in the same folder as this file) -->
+        <img class="logo" src="logo.png" alt="Clover Barrel &amp; Books logo" />
+
+        <p class="bridge">From Prep to Pour</p>
+        <div class="rule" aria-hidden="true"></div>
+
+        <p class="headline">Clean Closes<span>Smooth Finishes</span></p>
+      </section>
+    </main>
+
+    <footer>
+      Thoughtful accounting and tax support for food and beverage businesses
+    </footer>
+  </div>
+</body>
+</html>
